@@ -100,7 +100,7 @@ const changeState = function () {
 
 const scrollTo = function () {
     navigationBar.addEventListener('click', function (event) {
-        let clickId = document.getElementById(event.dataset.nav)
+        let clickId = document.getElementById(event.target.dataset.nav)
         clickId.scrollIntoView({ behavior: "smooth" });
     });
 };
